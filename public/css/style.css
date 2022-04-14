@@ -1,0 +1,129 @@
+/* start custom classess*/
+
+body {font-family: 'Lora-VariableFont_wght';}
+/* #view-all-products{
+    transition: all .5s ease-in-out;
+    transform: translateX(70px);
+}  */
+#view-all-products:hover{
+    transition: all .6s ease-in-out;
+    /* transform: translateX(0px); */
+    transform: scale(1.2);
+    /* transform: rotate(360deg); */
+} 
+.product-img {
+    background-color: #EEE;
+    width: 265px !important;
+    height: 200px;
+    transition: all ease-in-out .5s;
+    border: 1px solid #222;
+    padding: 0px;;
+    border-radius: 10px;
+}
+.product-img-detail {
+    width: 300px;
+    height: 250px;;
+    transition: all ease-in-out .5s;
+    border: 1px solid #222;
+    padding: 0px;;
+    border-radius: 10px;
+}
+.product-img:hover
+{
+    transform: scale(.9);
+}
+.product-name {
+    color: #333;
+    text-decoration: none;
+}
+.product-price {
+    color: #181717;
+}
+.copun-input {
+    border: 2px solid rgb(225 225 225);   
+}
+.copun-input {width: 78%;}
+.navbar .navbar-nav .nav-item #cart-count 
+{
+    position: absolute;
+    top: 18px;
+    left: 440px;
+    display: block;
+    background-color: #ff0;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #000;
+}
+
+.tap .features , .tap .onsale 
+{  
+    border-radius: 0px;
+    border: 1px solid #DDD;
+    color: #333;
+}
+
+.tap .features:hover , .tap .onsale:hover 
+{  
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+    background-color: #eee;
+    border-color: #777877;
+    border-radius: 3px;
+}
+
+.tap .features {
+    margin-right: 8px !important;
+}
+
+.cart-image
+{
+    width: 88px !important;
+    margin-right: 30px;
+}
+.cart-price {font-weight: 900;}
+
+/* end custom classess*/
+/* start bootstrap edit */
+.navbar-light .navbar-brand
+{
+    color: #FFF;
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: #FFF !important;
+    text-transform: uppercase !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link
+{
+    color: aqua !important;
+}
+.alert {transition: .3s ease-in-out;}
+/* end bootstrap edit */
+
+/* start utilty classes*/
+/*.pr-10 {margin-right: 10rem ;}*/
+.link-normal {
+    color: #666 !important;
+    text-decoration: none !important;
+}
+.line-hight {line-height: 1.7;}
+.bg-custom-light {
+    background-color: #d9d9d9!important;
+}
+.bolder {
+    font-weight: 900 !important;transition: all .3s ease-in-out;
+}
+
+hr:not([size])
+{
+    width: 78%;
+}
+.custom-border {
+    border: 2px solid #ced4da; 
+}
+.active {color: aqua !important;}
+/* end utilty classes*/
