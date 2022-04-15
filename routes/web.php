@@ -8,6 +8,7 @@ use App\Http\Controllers\MoyasarController;
 use App\Http\Controllers\ShopController;
 use App\Models\Product;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
@@ -65,16 +66,18 @@ Route::get('payobj',function()
 
 // Route::view('/cart','pages/cart')->name('cart');
 Route::post('/cart/{cart}',[CartController::class,'saveForLater'])->name('cart.saveforlater');
-Route::view('/about','pages/about');
-Route::view('/blog','pages/blog');
+Route::view('/about','pages/about')->name('about');
+Route::view('/blog','pages/blog')->name('blog');
 // Route::view('/checkout','pages/checkout');
 Route::view('/thankyou','pages/thankyou');
 
 
+
+
+Route::get('/monti',function(){
+    Auth::logout();
+})->name('monti');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-
-Route::get('/monti',function(){
-    
-})->name('monti');

@@ -1,5 +1,10 @@
-<div class="footer text-white mt-5 bg-primary p-5">
-    <div class="container lead text-center">
-        all Rigith Receved &copy; For {{env('APP_NAME')}}
+<div class=" bg-primary  footer text-white mt-5  p-5  ">
+    <div class="container d-flex justify-content-between ">
+        <div class="lead text-center">
+             {{env('APP_NAME')}} Build With Love <i class="fa-solid fa-heart fa-xl" style="color: red"></i> By Montasir
+        </div>
+        <div class="">
+            {{menu('footer','partials.menus.footer')}}
+        </div>
     </div>
 </div>
