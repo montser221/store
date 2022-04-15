@@ -5,12 +5,15 @@ use App\Http\Controllers\CheckOutController;
 use App\Http\Controllers\CoupunController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\MoyasarController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ShopController;
 use App\Models\Product;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
+use TCG\Voyager\Facades\Voyager;
+use TCG\Voyager\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -74,9 +77,8 @@ Route::view('/thankyou','pages/thankyou');
 
 
 
-Route::get('/monti',function(){
-    Auth::logout();
-})->name('monti');
+Route::get('/posts',[PostController::class,'index'])->name('posts');
+Route::get('/posts/{id}/show',[PostController::class,'show'])->name('show');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

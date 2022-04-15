@@ -104,7 +104,7 @@ return [
         /*
          * Select default language
          */
-        'default' => 'en',
+        'default' => 'ar',
 
         /*
          * Select languages that are supported.
@@ -184,7 +184,9 @@ return [
     |
     */
 
-    'primary_color' => '#22A7F0',
+    'primary_color' => '#9b59b6',
+    // 'primary_color' => '#22AA22',
+    // 22A7F0 default
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 

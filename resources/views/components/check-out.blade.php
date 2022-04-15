@@ -73,7 +73,7 @@
                         </div>
                         <div>
                             <label for="" class="form-label">CVC Code</label>
-                            <input type="text" class="form-control" name="source[cvc]" autocomplete>
+                            <input type="text" class="form-control" name="source[cvc]" autocomplete placeholder="CVC">
                         </div>
                     </div>
                     <div class="mb-3">
@@ -81,7 +81,7 @@
                         <input type="number" class="form-control" value="{{ $subtotal }}" name="amount">
                     </div>
                     <div class="d-grid gap-2 mb-3">
-                        <input type="submit" value="Complete Order" class="btn btn-primary btn-lg ">
+                        <input type="submit" value="Pay ${{presentPrice(ShoppingCart::total())}}" class="btn btn-primary btn-lg ">
                     </div>
                 </form>
                 <!-- end form -->

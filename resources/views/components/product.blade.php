@@ -1,8 +1,16 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6">
-            <img class=" product-img-detail rounded float-start mt-3 d-block img-thumbnail" 
-            src="{{ asset("images/products/". random_int(1,5) .".jpg")}}" alt="product image"/> 
+       
+            @if (!empty($product->image))
+                <img    class="product-img-detail rounded float-start mt-3 d-block img-thumbnail" 
+                src="{{asset('storage/'.$product->image)}}" 
+                alt="" 
+                srcset="">                
+            @else
+                <img class=" product-img-detail rounded float-start mt-3 d-block img-thumbnail" 
+                src="{{asset("images/products/". random_int(1,5) .".jpg")}}" alt="product image"/> 
+            @endif
         </div>
         <div class="col-md-6">
             <h3 class="bolder"> {{$product->slug}}  </h3>
